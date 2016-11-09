@@ -33,4 +33,10 @@ class WelcomeController < ApplicationController
     @users = User.all
     @rejections = Rejection.all
   end
+
+  def reset
+    User.destroy_all
+    Rejection.destroy_all
+    redirect_to action: :index
+  end
 end

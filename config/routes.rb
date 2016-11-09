@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'welcome/index'
   post 'welcome/upload'
+  post 'welcome/reset'
   get 'welcome/totals'
 
   root 'welcome#index'

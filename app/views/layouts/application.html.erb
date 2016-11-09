@@ -12,6 +12,7 @@
     <p>
       <%= link_to "Upload new list", welcome_index_path %>
       <%= link_to "Totals", welcome_totals_path %>
+      <%= link_to "Reset db", welcome_reset_path, method: :post %>
     </p>
     <%= yield %>
   </body>
